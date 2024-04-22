@@ -14,10 +14,10 @@ function App()
       {/* Page Content */}
       <div className='container'>
           <Routes>
-            <Route path='/https://github.com/ForgeFaceTheGreat/portfolio' />
             <Route path='/home' element={<Home />} />
             <Route path='/About' element={<About />} />
             <Route path='/Projects' element={<Projects />} />
+            <Route path='*' element={<Home />} />
           </Routes>
       </div>
     </>
