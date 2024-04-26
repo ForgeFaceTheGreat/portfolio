@@ -15,8 +15,8 @@ function App()
       {/* Page Content */}
       <div className='container'>
           <Routes>
-            {/* <Route path='/' element={<Home />} /> */}
             <Route path='/' element={<Navigate replace to={'/home'} />} />
+            <Route path='/portfolio' element={<Navigate replace to={'/home'} />} />
             <Route path='/Home' element={<Home />} />
             <Route path='/About' element={<About />} />
             <Route path='/Projects' element={<Projects />} />
