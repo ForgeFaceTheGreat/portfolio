@@ -26,9 +26,9 @@ export default function Navbar()
             <Link to="https://github.com/ForgeFaceTheGreat/portfolio" target='_blank' className="site-title">Portfolio</Link>
            
             <ul>
-                <CustomLink to="/home">Home</CustomLink>
-                <CustomLink to="/about">About</CustomLink>
-                <CustomLink to="/projects">Projects</CustomLink>
+                <CustomLink to="/portfolio/home">Home</CustomLink>
+                <CustomLink to="/portfolio/about">About</CustomLink>
+                <CustomLink to="/portfolio/projects">Projects</CustomLink>
             </ul>
 
             <div className='burger-menu' onClick={updateMenu}>
