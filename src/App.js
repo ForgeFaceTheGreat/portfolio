@@ -15,14 +15,14 @@ function App()
       {/* Page Content */}
       <div className='container'>
           <Routes>
-            <Route path='/' element={<Navigate replace to={'/portfolio/home'} />} />
+            <Route path='/' element={<Navigate replace to={'/home'} />} />
             <Route path='/portfolio' element={<Navigate replace to={'/portfolio/home'} />} />
-            <Route path='/portfolio/Home' element={<Home />} />
-            <Route path='/portfolio/About' element={<About />} />
-            <Route path='/portfolio/Projects' element={<Projects />} />
+            <Route path='/Home' element={<Home />} />
+            <Route path='/About' element={<About />} />
+            <Route path='/Projects' element={<Projects />} />
 
-            <Route path='/portfolio/404_error' element={<Error404 />} />
-            <Route path='*' element={<Navigate replace to={'/portfolio/404_error'} />} />
+            <Route path='/404_error' element={<Error404 />} />
+            <Route path='*' element={<Navigate replace to={'/404_error'} />} />
           </Routes>
       </div>
     </>
