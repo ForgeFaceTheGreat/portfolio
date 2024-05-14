@@ -21,16 +21,26 @@ export default function Navbar()
         setIsMenuClicked(!isMenuClicked)
     }
 
+    // Closes drop down so its not open if screen get bigger than smaller
+    window.addEventListener("resize", function() {
+        if (window.matchMedia("(min-width: 500px)").matches)
+        {
+          if (isMenuClicked) { updateMenu() }
+        }
+    })
+
     return <div>
             <nav className="nav">
             <Link to="https://github.com/ForgeFaceTheGreat/portfolio" target='_blank' className="site-title">Portfolio</Link>
            
+           {/* Navbar links */}
             <ul>
                 <CustomLink to="/home">Home</CustomLink>
                 <CustomLink to="/about">About</CustomLink>
                 <CustomLink to="/projects">Projects</CustomLink>
             </ul>
 
+            {/* Burger menu lines */}
             <div className='burger-menu' onClick={updateMenu}>
                 <div className={burger_class}></div>
                 <div className={burger_class}></div>
@@ -41,7 +51,7 @@ export default function Navbar()
         {/* Drop Down Menu */}
         <div className={menu_class}>
             <nav className="nav-responsive">
-                <ul>
+                <ul onClick={updateMenu}> {/* Close drop down when link is clicked */}
                     <CustomLink to="/home">Home</CustomLink>
                     <CustomLink to="/about">About</CustomLink>
                     <CustomLink to="/projects">Projects</CustomLink>
