@@ -29,6 +29,7 @@ export default function Navbar()
         }
     })
 
+    // Displayed content
     return <div>
             <nav className="nav">
             <Link to="https://github.com/ForgeFaceTheGreat/portfolio" target='_blank' className="site-title">Portfolio</Link>

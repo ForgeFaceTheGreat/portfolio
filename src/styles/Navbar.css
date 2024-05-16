@@ -41,11 +41,11 @@ body {
     padding: .25rem;
 }
 
-.nav li.active {
+li.active {
     background-color: #555;
 }
 
-.nav li:hover {
+li:hover {
     background-color: #777;
 }
 
@@ -55,6 +55,23 @@ body {
 
 .nav-responsive {
     display: none;
+}
+
+/* ----------------- Animate links ----------------- */
+li {
+    opacity: 0;
+    text-indent: -45%;
+}
+
+li:nth-child(1){ animation:bringback 0.5s 0s forwards; }
+li:nth-child(2){ animation:bringback 0.5s  0.5s forwards; }
+li:nth-child(3){ animation:bringback 0.5s  1s forwards; }
+
+@keyframes bringback {
+    to {
+        opacity: 1;
+        text-indent: 0%;
+    }
 }
 
 /* ----------------- Responsiveness ----------------- */
@@ -81,7 +98,7 @@ body {
         list-style: none;
         font-size: 1.2rem;
     }
-    
+
     .nav-responsive a {
         color: inherit;
         text-decoration: none;
@@ -92,14 +109,6 @@ body {
         margin: 0.75rem;
     }
     
-    .nav-responsive li.active {
-        background-color: #555;
-    }
-    
-    .nav-responsive li:hover {
-        background-color: #777;
-    }
-
     /* ----------------- Burger Menu Structure ----------------- */
     .burger-menu {
         visibility: visible;
@@ -111,6 +120,7 @@ body {
         justify-content: space-between;
         cursor: pointer;
     }
+    
     .burger-bar {
         width: 2.5em;
         height: 0.3em;
