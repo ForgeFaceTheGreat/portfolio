@@ -1,0 +1,26 @@
+/* :root {
+    --img1: url(../Images/img1.png);
+    --img2: url(../Images/img2.jpg);
+    --img3: url(../Images/img3.jpg);  
+} */
+
+.carousel {
+    background-color: aqua;
+    height: 300px;
+    background-size: cover;
+    position: relative;
+}
+
+.text {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 1rem;
+}
+
+/* .carousel {
+    background-image: var(--img2);
+} */

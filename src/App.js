@@ -1,9 +1,11 @@
 import './styles/App.css';
-import Navbar from './Navbar';
+
+import Navbar from './Components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Error404 from './pages/404_error';
+
 import { Route, Routes, Navigate } from 'react-router-dom'
 
 function App()

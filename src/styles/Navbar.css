@@ -63,11 +63,11 @@ li {
     text-indent: -45%;
 }
 
-li:nth-child(1){ animation:bringback 0.5s 0s forwards; }
-li:nth-child(2){ animation:bringback 0.5s  0.5s forwards; }
-li:nth-child(3){ animation:bringback 0.5s  1s forwards; }
+li:nth-child(1){ animation:slideIn 0.7s 0.3s forwards; }
+li:nth-child(2){ animation:slideIn 0.7s  0.9s forwards; }
+li:nth-child(3){ animation:slideIn 0.7s  1.6s forwards; }
 
-@keyframes bringback {
+@keyframes slideIn {
     to {
         opacity: 1;
         text-indent: 0%;
