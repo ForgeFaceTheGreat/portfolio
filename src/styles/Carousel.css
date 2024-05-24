@@ -1,17 +1,12 @@
-/* :root {
-    --img1: url(../Images/img1.png);
-    --img2: url(../Images/img2.jpg);
-    --img3: url(../Images/img3.jpg);  
-} */
-
 .carousel {
-    background-color: aqua;
+    background-color: none;
     height: 300px;
     background-size: cover;
     position: relative;
+    border-radius: 2rem;
 }
 
-.text {
+.title {
     color: white;
     font-size: 2rem;
     font-weight: bold;
@@ -19,8 +14,33 @@
     bottom: 0;
     left: 0;
     margin: 1rem;
+    padding-bottom: 1rem;
 }
 
-/* .carousel {
-    background-image: var(--img2);
-} */
+.description {
+    color: white;
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+    padding-bottom: 1rem;
+}
+
+.a link {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.swiper-pagination-bullet {
+    background-color: #777;
+    opacity: 65%;
+    padding: 0.4rem;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #555;
+    opacity: 85%;
+}
