@@ -1,9 +1,16 @@
 .carousel {
     background-color: none;
-    height: 300px;
+    height: 20rem;
     background-size: cover;
     position: relative;
     border-radius: 2rem;
+}
+
+.vignette {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    box-shadow: inset 0 0 100px #000;
 }
 
 .title {
@@ -13,8 +20,10 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    text-align: left;
     margin: 1rem;
     padding-bottom: 1rem;
+    flex: 50%;
 }
 
 .description {
@@ -24,23 +33,26 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    text-align: right;
     margin: 1rem;
     padding-bottom: 1rem;
-}
-
-.a link {
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
+    flex: 50%;
 }
 
 .swiper-pagination-bullet {
     background-color: #777;
-    opacity: 65%;
+    opacity: 75%;
     padding: 0.4rem;
 }
 
 .swiper-pagination-bullet-active {
     background-color: #555;
-    opacity: 85%;
+    opacity: 95%;
+}
+
+/* ----------------- Responsiveness ----------------- */
+@media (max-width: 500px) {
+    .description {
+        display: none;
+    }
 }

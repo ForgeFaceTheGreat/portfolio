@@ -6,7 +6,7 @@ import 'swiper/swiper-bundle.css'
 
 import '../styles/Carousel.css' 
 
-const slider = [
+const content = [
     {
         title: "Image 1",
         description: "Stuff and things",
@@ -43,19 +43,23 @@ export default function Carousel()
                     loop={true}
                     pagination={{ clickable: true }}
                     // slidesPerView={2}
-                    speed={1000}
+                    speed={1500} /* 2000 = 2 sec */
                     autoplay={{
-                        delay: 5000,
+                        delay: 5000, /* 5000 = 5 sec */
                         disableOnInteraction: false
                     }}
                 >
                 {
-                    slider.map(data => (
-                    <SwiperSlide style={{ backgroundImage: `url(${data.url})`}}>
-                            <div className="title">{data.title}</div>
-                            <p className="description">{data.description}</p>
-                            <a href={`${data.url}`} target="_blank" className="link">explore</a>
-                    </SwiperSlide>
+                    content.map(data => (
+                        <SwiperSlide style={{ backgroundImage: `url(${data.url})`, backgroundRepeat: `no-repeat`, backgroundSize: `cover`, borderRadius: `2rem`}}>
+                                <a href={`${data.url}`} target="_blank" className="link">
+                                    <div className="vignette">
+                                        { /* Adds link to entire Slide and adds vignette */ }
+                                    </div>
+                                    <span className="title">{data.title}</span>
+                                    <span className="description">{data.description}</span>
+                                </a>
+                        </SwiperSlide>
                     ))
                 }
             </Swiper>
