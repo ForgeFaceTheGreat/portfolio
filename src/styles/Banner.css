@@ -1,0 +1,45 @@
+.bounds {
+    height: 20rem;
+    width: 98%;
+    margin: 1%;
+    font-size: 1.5rem;
+    color: white;
+    background-color: red;
+    border-radius: 2rem;
+}
+
+.column {
+    float: left;
+    height: 100%;
+    width: 50%;
+    /* padding: 10rem; */
+    /* background-color: aliceblue; */
+    position: relative;
+    border-radius: 2rem;
+}
+
+.right {
+    /* position: absolute; */
+    /* bottom: 0; */
+    background-color: yellow;
+}
+
+.left {
+    background-color: blue;
+}
+
+span {
+    margin: 2rem;
+}
+
+.right span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.left span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
